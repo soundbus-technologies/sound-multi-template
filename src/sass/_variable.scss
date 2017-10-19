@@ -1,0 +1,33 @@
+@import "_p2r";
+
+[v-cloak] {
+  display: none;
+}
+
+// 全局颜色
+$globalBlue: #3683DC; // 全局
+$minorBlue: #D3E6F6; // 次级
+$globalRed: #eb3b3d; // 全局
+$minorRed: #e94d5a; // 次级
+$awardRed: #FB4407;
+
+// 字体颜色
+$fc-1: #333; // 字体颜色等级1
+$fc-2: #313232; // 字体颜色等级2
+$fc-3: #888; // 字体颜色等级3
+$fc-4: #dcdcdc; // 字体颜色等级4
+
+// 背景颜色或线的颜色
+$bgOrLine-1: #EAEAEA;
+$bgOrLine-2: #f8f8f8;
+$bgOrLine-3: #ffffff;
+
+// 字体大小
+$fs-1: r(24);
+$fs-2: r(26);
+$fs-3: r(28);
+$fs-4: r(32);
+$fs-5: r(34);
+$fs-6: r(40);
+$fs-7: r(48);
+

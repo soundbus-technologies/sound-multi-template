@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="screen-orientation" content="portrait">
+	<title>测试1</title>
+	<!-- build:init -->
+	<script src="../../js/lib/flexible.js"></script>
+	<script src="../../js/lib/zepto1.2.0.js"></script>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<!-- endbuild -->
+	<link rel="stylesheet" href="../../css/test/index3.css">
+</head>
+<body>
+<div id="container">
+	<h1>姓名: {{ nickName }}</h1>
+	<h2>状态: {{status}}</h2>
+	<article>
+		<section v-for="(item,index) in list" :class="{'isfinish' : item.isFinish}">
+			<a :href="item.href"></a>
+			<h4>{{index}}</h4>
+			<p v-text="item.title"></p>
+		</section>
+	</article>
+</div>
+
+<!-- build:js -->
+<script src="../../mock/test/index.js"></script>
+<!-- endbuild -->
+<script src="../../js/lib/vue2.0.js"></script>
+<script src="../../js/test/index.js"></script>
+</body>
+</html>
